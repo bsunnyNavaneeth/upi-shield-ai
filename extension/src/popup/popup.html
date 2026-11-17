@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="popup.css"><title>UPI Shield AI</title></head>
+<body>
+  <header><span class="mark">⬡</span><span><b>UPI SHIELD AI</b><small>BROWSER PROTECTION</small></span><button id="settings" aria-label="Settings">⚙</button></header>
+  <section class="state"><i></i><span>Protection is ready</span><small>Scans only when you ask</small></section>
+  <section class="current"><label>CURRENT WEBSITE</label><p id="domain">Open a website to check</p><button id="scan">⌕ &nbsp; Scan current website</button></section>
+  <div id="result" class="result hidden"></div>
+  <section class="recent"><div><b>Recent checks</b><span id="clear">Clear</span></div><ul id="history"><li class="empty">Your checks will appear here.</li></ul></section>
+  <footer><a id="dashboard" href="#">Open UPI Shield dashboard ↗</a><p>Never share your PIN, OTP, or passwords.</p></footer>
+  <script type="module" src="popup.js"></script>
+</body></html>

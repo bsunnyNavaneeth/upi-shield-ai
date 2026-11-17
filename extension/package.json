@@ -1,0 +1,7 @@
+{
+  "name": "upi-shield-ai-protect",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Manifest V3 companion extension for explicit URL safety checks"
+}

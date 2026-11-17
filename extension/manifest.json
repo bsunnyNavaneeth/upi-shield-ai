@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "UPI Shield AI Protect",
+  "version": "0.1.0",
+  "description": "Check a website or selected link for common scam warning signs when you choose.",
+  "permissions": ["activeTab", "storage", "contextMenus"],
+  "host_permissions": ["https://msxkvurukpyljcwgttru.supabase.co/*"],
+  "action": { "default_popup": "src/popup/popup.html", "default_title": "Check with UPI Shield AI" },
+  "background": { "service_worker": "src/background/service-worker.js", "type": "module" },
+  "options_page": "src/options/options.html"
+}
