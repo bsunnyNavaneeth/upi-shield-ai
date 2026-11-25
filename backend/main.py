@@ -2,7 +2,9 @@ import io
 import os
 import re
 import warnings
+import logging
 
+logger = logging.getLogger("uvicorn.error")
 import pytesseract
 from fastapi import FastAPI, File, Form, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
@@ -137,10 +139,11 @@ async def analyze(
 
                     image.load()
                     rgb_image = image.convert("RGB")
+                    rgb_image.thumbnail((1600, 1600))
 
             extracted_text = pytesseract.image_to_string(
                 rgb_image,
-                timeout=15
+                timeout=45
             ).strip()
 
         except HTTPException:
